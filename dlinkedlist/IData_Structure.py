@@ -22,3 +22,4 @@ class queue():
         self.new_queue._deQ()
     def print_list(self):
         self.new_queue.printList()
+        print("hi")
