@@ -3,13 +3,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d683a6e0-0e3c-4646-b6af-ef9c128ddfcb</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>dlinkedlist.py</StartupFile>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>progs\driver.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>dlinkedlist</Name>
+    <Name>links</Name>
     <RootNamespace>dlinkedlist</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -21,19 +22,40 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="data_structures.py">
+    <Compile Include="interfaces\data_structures\_queue.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IData_Structure.py">
+    <Compile Include="interfaces\data_structures\_stack.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="nodes.py">
+    <Compile Include="interfaces\IData_Structure.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="linkedlist.py">
+    <Compile Include="interfaces\ILink_List.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="dlinkedlist.py" />
+    <Compile Include="interfaces\data_structures\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="interfaces\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="list_pkg\nodes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="list_pkg\linkedlist.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="list_pkg\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="progs\driver.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="interfaces\data_structures\" />
+    <Folder Include="list_pkg\" />
+    <Folder Include="interfaces\" />
+    <Folder Include="progs\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

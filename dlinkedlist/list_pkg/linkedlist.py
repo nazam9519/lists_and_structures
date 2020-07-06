@@ -1,4 +1,4 @@
-from nodes import *
+from list_pkg.nodes import * 
 
 class linkedlist:                                  
     def __init__(self):
@@ -94,4 +94,3 @@ class double_linkedlist:
             self.tail.nextitem = None
             return True
         else: return False
-    

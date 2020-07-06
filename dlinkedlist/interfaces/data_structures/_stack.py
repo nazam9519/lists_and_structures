@@ -1,7 +1,6 @@
-from linkedlist import double_linkedlist
-from linkedlist import linkedlist as single_ll
+from list_pkg.linkedlist import linkedlist as single_ll
 
-class priv_stack(single_ll):
+class _stack(single_ll):
     """stack data structure built on top of linked list"""
     def __init__(self):
         super().__init__()
@@ -16,12 +15,3 @@ class priv_stack(single_ll):
         temp = self.head
         self.head = self.head.nextitem
         temp = None
-
-
-class _queue(double_linkedlist):
-    def __init__(self):
-        super().__init__()
-    def _enQ(self,data):
-        self.insert_after(data)
-    def _deQ(self):
-        self.remove_front()
