@@ -5,7 +5,7 @@
     <ProjectGuid>d683a6e0-0e3c-4646-b6af-ef9c128ddfcb</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>progs\driver.py</StartupFile>
+    <StartupFile>caller_pgm\driver.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -49,13 +49,13 @@
     <Compile Include="list_pkg\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="progs\driver.py" />
+    <Compile Include="caller_pgm\driver.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="interfaces\data_structures\" />
     <Folder Include="list_pkg\" />
     <Folder Include="interfaces\" />
-    <Folder Include="progs\" />
+    <Folder Include="caller_pgm\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
