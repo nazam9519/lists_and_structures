@@ -2,6 +2,7 @@ import interfaces
 from interfaces.data_structures._queue import _queue
 from interfaces.data_structures._stack import _stack
 
+"""helps hide list functions, caller won't see list_append or stuff"""
 class stack_i():
     def __init__(self):
         self.__set_stack()
