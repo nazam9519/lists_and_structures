@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="interfaces\data_structures\tree.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="interfaces\data_structures\_queue.py">
       <SubType>Code</SubType>
     </Compile>

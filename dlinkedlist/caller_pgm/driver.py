@@ -3,8 +3,14 @@
 
 from interfaces import queue
 from interfaces import stack
-
+from interfaces.data_structures.tree import tree
 def main():
+    tree1 = tree()
+    tree1.insert(5)
+    tree1.insert(4)
+    tree1.tree_print()
+    tree1._tree__treeprint(1)
+    return 0
     stacky = stack()
     stacky.print_list()
     stacky.push(1)
